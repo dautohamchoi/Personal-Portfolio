@@ -17,7 +17,8 @@ const modals = document.querySelectorAll('.modal-item');
 const modalList = document.querySelector('.modal-list');
 const overlay = document.getElementById('overlay');
 
-
+const contactList = document.querySelectorAll('.contact-link');
+const contactImage = document.querySelector('.contact-image');
 
 function closeNavbar() {
     navList.classList.toggle('active');
@@ -93,8 +94,18 @@ overlay.addEventListener('click', () => {
         modal.classList.remove('active-modal');
     });
     overlay.classList.remove('active-overlay');
-})
+});
 
+// when users hover each contact links, contact images will rotate
+for (let i = 0; i < contactList.length; i++) {
+    const degree = 90 * (i + 1) + "deg";
+    contactList[i].addEventListener('mouseover', () => {
+        contactImage.style.transform = `rotate(${degree})`; 
+    });
+    contactList[i].addEventListener('mouseout', () => {
+        contactImage.style.transform = "rotate(0)"; 
+    });
+}
 
 
 

@@ -546,6 +546,7 @@
     max-width: 400px;
     max-height: 400px;
     margin-bottom: 40px;
+    transition: transform .5s ease-in-out;
   }
   .contact-header h3 {
     font-size: 30px;
