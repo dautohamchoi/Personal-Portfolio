@@ -1,0 +1,345 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Poppins:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Hoang's Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/young-boy.svg" alt="logo">
+            <span> Hoang's Portfolio</span>
+        </div>
+        <div class="navbar-right">
+            <ul class="navbar-list">
+                <li onclick="closeNavbar()">
+                    <a href="#welcome">Home</a>
+                </li>
+                <li onclick="closeNavbar()">
+                    <a href="#about">About</a> 
+                </li>
+                <li onclick="closeNavbar()">
+                    <a href="#projects">Projects</a>   
+                </li>
+                <li onclick="closeNavbar()">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button class="navbar-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-content">
+            <h3>Hello, I am Hoang.</h3>
+            <p>An environmental engineer who wants to be a front-end 
+                developer in the future.</p>
+            <a href="#"
+                target="_blank"
+                >
+                Get My CV</a>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <ul class="about-list">
+            <li class="about-list-title">
+                <h3>About Me</h3>
+            </li>
+            <li class="about-list-story">
+                <h4>My Story</h4>
+                <p>One day I hung out with my friends in a coffee shop. 
+                    One of them, who is a programmer, told us about his job. 
+                    At this time, I was hooked in the story which he showed us 
+                    that the industry is really intriguing but challenging. 
+                </p>
+                <p>A thought popped up in my mind when I came back home was 
+                    whether I could become a programmer like my buddy. 
+                    I typed the question on google right off the bat. 
+                    Among thousands of results, an article inspiring me greatly was written 
+                    by the founder of freeCodeCamp. He worked as a teacher for a decade 
+                    and now is a programmer.
+                </p>
+                <p>
+                    "It is awesome", I shouted. This was a shining example and 
+                    I decided to embark on a new career as a web developer.
+                </p>
+            </li>
+            <li class="about-list-learn">
+                <div class="about-item">
+                    <h4>What I learned so far?</h4>
+                    <p>Understanding the fundamental concepts about 
+                        Data Structure, Algorithms, Object Oriented Programming, ECMAScript 6 and Regular Expression.</p>
+                    <p>Having a good grasp of HTML5, CSS, Javascript and React.</p>
+                    <p>Working with React, Express, NodeJS on the daily basis through projects below.</p>
+                </div>
+            </li>
+            <li class="about-list-objectives">
+                <h4>Objective</h4>
+                <p>Never missing any opportunities to land a job in 
+                    based-DaNang technology company to turn my dream into reality.</p>
+            </li>
+        </ul>
+        <img src="/images/undraw_Hello_qnas.svg" alt="hello-svg"
+            class="about-image"
+            > 
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h3 class="projects-header">My Projects</h3>
+        <ul class="projects-list">
+            <li class="projects-list-item" id="project-one">
+                <img src="images/memory-game-1.png" 
+                  alt="project-1"
+                  class="projects-image"
+                  data-id="0"
+                  >
+                <div class="projects-info">
+                    <h3>Hearthstone Memory Game</h3>
+                    <h4>Features:</h4>
+                    <ul class="projects-feature-list">
+                      <li>
+                          Including two play modes: (training and challenges).
+                      </li>
+                      <li>
+                          Gamers have to overcome 9 challenges to win a victory.
+                      </li>
+                      <li>
+                          There are two ranking including high scores and high levels to evaluate gamers.
+                      </li>
+                      <li>
+                          Gamers can leave their comment in feedback section and rate the game.
+                      </li>
+                    </ul>
+                    <ul class="projects-source">
+                        <li><b>Stacks:</b></li>
+                        <li style="background-color: lightgreen">MongoDB</li>
+                        <li style="background-color: #b2bec3">Express</li>
+                        <li style="background-color: #3498db">React</li>
+                        <li style="background-color: #a55eea">Redux</li>
+                        <li style="background-color: #20bf6b">NodeJS</li>  
+                    </ul>
+                    <div class="projects-link">
+                        <a href="https://hearthstone-memory-game.herokuapp.com/" >
+                          <i class="fas fa-arrow-circle-right"></i>
+                          Demo
+                        </a>
+                        <a href="#">
+                          <i class="fab fa-github"></i>
+                          Source Code
+                        </a>
+                    </div>
+                </div>  
+              </li>
+
+            <li class="projects-list-item" id="project-two">
+              <img src="images/nike-store.png" 
+                alt="project-2"
+                class="projects-image"
+                data-id="1"
+                >
+              <div class="projects-info">
+                  <h3>Nike Store VN</h3>
+                  <h4>Features:</h4>
+                  <ul class="projects-feature-list">
+                    <li>
+                        Display products to customers, customers can choose which colors they want without accessing new tab.
+                    </li>
+                    <li>
+                        There is a search bar allowing customer to find what they need to buy.    
+                    </li>
+                    <li>
+                        Users and Admin easily sign in and change their information.
+                    </li>
+                    <li>
+                        Allow admin to manage the website by creating, updating or deleting products.    
+                    </li>
+                  </ul>
+                  <ul class="projects-source">
+                      <li><b>Stacks:</b></li>
+                      <li style="background-color: lightgreen">MongoDB</li>
+                      <li style="background-color: #b2bec3">Express</li>
+                      <li style="background-color: #3498db">React</li>
+                      <li style="background-color: #a55eea">Redux</li>
+                      <li style="background-color: #20bf6b">NodeJS</li>  
+                  </ul>
+                  <div class="projects-link">
+                      <a href="https://nike-store-vn.herokuapp.com/" >
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Demo
+                      </a>
+                      <a href="https://github.com/dautohamchoi/nike-store-vn">
+                        <i class="fab fa-github"></i>
+                        Source Code
+                      </a>
+                  </div>
+              </div>  
+            </li>
+
+            <li class="projects-list-item" id="project-three">
+                <img src="images/calculator.png" 
+                  alt="project-1"
+                  class="projects-image"
+                  data-id="2"
+                  >
+                <div class="projects-info">
+                    <h3>Calculator</h3>
+                    <h4>Features:</h4>
+                    <ul class="projects-feature-list">
+                      <li>
+                          UX/UI is user-friendly, features large button with light colors.
+                      </li>
+                      <li>
+                          When users input number, they can be able to see the input on display screen.
+                      </li>
+                      <li>
+                          Users should be able to perform any operation on numbers containing decimal points.
+                      </li>
+                      <li>
+                          Calculator have decimal places of precision when it comes to rounding (up to 15 decimal places).
+                      </li>
+                    </ul>
+                    <ul class="projects-source">
+                        <li><b>Stacks:</b></li>
+                        <li style="background-color: #f88b0f">HTML5</li>
+                        <li style="background-color: #0f9bf8">CSS3</li>
+                        <li style="background-color: #a55eea">Bootstrap</li>
+                        <li style="background-color: #3498db">React</li>
+                    </ul>
+                    <div class="projects-link">
+                        <a href="https://codepen.io/Doan-Nguyen-Hoang/pen/JjYogaM" >
+                          <i class="fas fa-arrow-circle-right"></i>
+                          Demo
+                        </a>
+                        <a href="https://codepen.io/Doan-Nguyen-Hoang/pen/JjYogaM">
+                          <i class="fab fa-codepen"></i>
+                          Source Code
+                        </a>
+                    </div>
+                </div>  
+              </li>
+        </ul>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-header">
+            <img src="images/puzzle.svg" alt="teamwork">
+            <h3>Let me be a part of your company...</h3>
+            <h4><i>Please feel free to get in touch with me!</i></h4>
+        </div>
+        <div class="contact-content">
+            <a href="https://www.linkedin.com/in/doan-nguyen-hoang/" 
+                target="_blank" 
+                class="contact-link"
+                >
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+                <a href="https://www.facebook.com/dautohamchoi" 
+                target="_blank" 
+                class="contact-link"
+                >
+                <i class="fab fa-facebook"></i>
+                Facebook
+             </a>
+            </a>
+                <a href="https://github.com/dautohamchoi/" 
+                target="_blank" 
+                class="contact-link"
+                >
+                <i class="fab fa-github"></i>
+                Github
+             </a>
+             </a>
+                <a href="tel:0348865563" 
+                target="_blank" 
+                class="contact-link"
+                >
+                <i class="fas fa-phone-square"></i>
+                Call me
+             </a>                      
+        </div>
+    </section>
+
+    <aside class="modal-list">
+        <div class="modal-item">
+            <div class="modal-info">
+                <h4>Hearthstone Memory Game</h4>
+                <div class="modal-link">
+                    <a href="https://hearthstone-memory-game.herokuapp.com/"
+                    target="_blank"  >
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Demo
+                    </a>
+                    <a href="https://github.com/dautohamchoi/memory-card-game"
+                    target="_blank" >
+                        <i class="fab fa-github"></i>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <img src="/images/memory-game-2.png" 
+                alt="game-project"
+                class="modal-image"  
+            >
+
+        </div>
+        <div class="modal-item">
+            <div class="modal-info">
+                <h4>Nike Store VN</h4>
+                <div class="modal-link">
+                    <a href="https://nike-store-vn.herokuapp.com/" >
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Demo
+                    </a>
+                    <a href="https://github.com/dautohamchoi/nike-store-vn">
+                        <i class="fab fa-github"></i>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <img src="/images/nike-store.png" 
+                alt="nike-project"
+                class="modal-image"  
+            >
+
+        </div>
+
+        <div class="modal-item">
+            <div class="modal-info">
+                <h4>Calculator</h4>
+                <div class="modal-link">
+                    <a href="https://codepen.io/Doan-Nguyen-Hoang/full/JjYogaM" >
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Demo
+                    </a>
+                    <a href="https://codepen.io/Doan-Nguyen-Hoang/pen/JjYogaM">
+                        <i class="fab fa-codepen"></i>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <img src="/images/calculator2.png" 
+                alt="calculator-project"
+                class="modal-image"  
+            >
+
+        </div>
+    </aside>
+    <div id="overlay"></div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
